@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.1)), url(../images/josh-withers-Z3cYdvQCW7Y-unsplash.jpg) no-repeat fixed;
+    background-position: center;
+    /* Center the image */
+
+    /* background-color: rgba(110, 110, 110, 0.5);
+    background-blend-mode: soft-light; */
+
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    color: white;
+    height: 100%;
+}
+
+
+
+.navbar {
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+.nav-link {
+    padding-left: 95px !important;
+    color: white !important;
+    font-size: .8em;
+    opacity: 0.7;
+}
+
+.navbar-brand {
+    font-size: 1.9rem;
+    color: white;
+}
+
+.orange {
+    color: #ec8118;
+    text-decoration: none;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+#log {
+    margin: 17px 0;
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.7em;
+}
+
+input {
+    background-color: transparent !important;
+    color: white !important;
+    font-weight: 700;
+    border-radius: 16px !important;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.1em !important;
+    color: #ec8118 !important;
+}
+
+.btn-secondary {
+    margin-right: 17px;
+    color: white;
+    background-color: gray;
+}
+
+.btn-warning {
+    background-color: #ec8118 !important;
+    color: white !important;
+}
+
+.btn {
+    border: none;
+    padding: 12px 53px;
+    border-radius: 25px;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.middle {
+    margin-top: 4%;
+}
+
+i {
+    margin-top: -41px;
+    width: 34px;
+}

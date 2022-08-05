@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!-- BootStrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Anywhere app</title>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg mt-1">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="" width="45" height="45" class="d-inline-block align-text-center">
+                    Anywhere app <span class="orange">.</span>
+                  </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Join</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>                
+    </div>
+
+
+    <!-- Body Content -->
+
+    <div class="container align-middle middle ">
+        <div class="row align-middle">
+            <div class="col-5">
+                <p>START FOR FREE</p>
+                <h1>Create new account <span class="orange">.</span></h1>
+                <p id="log">Already A Member? <a href="#" class="orange">Log In</a></p>
+
+
+                <div class="row g-2">
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <!-- <i class="bi bi-person-video3 float-end"></i> -->
+                            <input type="text" class="form-control" id="floatingInputGrid" placeholder="First name" value="Saleh">
+                        
+                            <label for="floatingInputGrid">First name</label>
+                        
+                      </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingInputGrid" placeholder="Last name" value="Essam">
+                          <label for="floatingInputGrid">Last name</label>
+                        </div>
+                      </div>
+                  </div>
+
+                <br>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@anwhere.co" value="saleh.essam.1991@gmail.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                    <i class="bi bi-eye-slash float-end" id="togglePassword"></i>
+                </div>
+                
+                <br><br>
+                    <button type="button" class="btn btn-secondary">Change method</button>
+                    <button type="button" class="btn btn-warning">Create account</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <!-- BootStrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+    <!-- Toggle Password Script -->
+    <script>
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#floatingPassword");
+
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("bi-eye");
+        });
+
+        // prevent form submit
+        const form = document.querySelector("form");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+        });
+    </script>
+
+
+</body>
+</html>
